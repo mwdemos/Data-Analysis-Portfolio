@@ -8,6 +8,7 @@ Hi, I'm Mike. I'm a mathematics teacher with a growing passion for working with 
 - Languages: SQL
 - Database management: MySQL
 - Visualization: Tableau
+- Google Sheets
 
 ## Projects:
 ### 1. MCAS Scores
