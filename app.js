@@ -7,7 +7,7 @@ const url = "https://public.tableau.com/views/MCASScores_17204477306580/2023PVPA
 
 const vizContainer = document.getElementById('vizContainer');
 const options = {
-    hideTabs: true,
+    hideTabs: false,
     height: 1000,
     width: 1200,
     onFirstInteraction: function() {
