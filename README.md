@@ -10,6 +10,6 @@ Hi, I'm Mike. I'm a mathematics teacher with a growing passion for working with 
 - Visualization: Tableau
 
 ## Projects:
-| Project Name | Description | Skills |
+| Project Name | Description | Skills Used |
 | --- | --- | --- |
-| [MCAS Scores](https://mwdemos.github.io/Data-Analysis-Portfolio/) | description | skills |
+| [MCAS Scores](https://mwdemos.github.io/Data-Analysis-Portfolio/) | Made data visualizations in Tableau to show how my students' MCAS scores stack up to the rest of the state. | data manipulation, data integration, dashboard design, calculated fields |
