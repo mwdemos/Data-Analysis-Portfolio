@@ -8,7 +8,7 @@ const url = "https://public.tableau.com/views/MCASScores_17204477306580/2023PVPA
 const vizContainer = document.getElementById('vizContainer');
 const options = {
     hideTabs: false,
-    height: 1100,
+    height: 2000,
     width: 1200,
     onFirstInteraction: function() {
         workbook = viz.getWorkbook();
