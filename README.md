@@ -12,4 +12,5 @@ Hi, I'm Mike. I'm a mathematics teacher with a growing passion for working with 
 ## Projects:
 | Project Name | Description | Skills Used |
 | --- | --- | --- |
-| [MCAS Scores](https://mwdemos.github.io/Data-Analysis-Portfolio/) | Made data visualizations in Tableau to show how my students' MCAS scores stack up to the rest of the state. | data manipulation, data integration, dashboard design, calculated fields |
+| [MCAS Scores](https://mwdemos.github.io/Data-Analysis-Portfolio/) | Made data visualizations in Tableau to show how my students' MCAS scores stack up to the rest of the state. | importing data, data integration, normalization & standardization, aggregation, checking data integrity, dashboard design, calculated fields |
+|Video Game Wishlist | Used mySQL to form an organized list of progress on my video game collection while practicing writing SQL queries. | creating & editing tables, data filtering, aggregate functions |
