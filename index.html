@@ -37,7 +37,11 @@
       <p>In the 2023 visualizations, we can see from the graphs that PVPA has a consistently lower percentage of students who exceeded expectations. For those who met expectations, the percent of 7th and 10th grade students is quite similar between PVPA and the state, considering that the PVPA 7th graders are only about 5 percent fewer than the state average and there are about 4 percent more PVPA 10th graders than statewide at this achievement level. In 8th grade, however, we see a whopping 25 percent fewer PVPA students meeting expectations than the state. Another striking difference between PVPA and the state is the greater percentage of PVPA students across all three grade levels who partially met expectations. At this achievement level, the state has 40 or 42 percent of its students in each grade level while PVPA students make up about 56, 67, and 47 percent in 7th, 8th, and 10th grade respectively.</p>
 
     <h1>2017 Scores</h1>
-      <p>With the 2017 data, I set out to match my 2023 visualizations and make similar interpretations. Here, I had to set up calculated fields in Tableau to compute the percentages of students at each achievement level. I coded in some basic averages e.g. SUM([MCAS 10thGrade Math A #])/(SUM([MCAS 10thGrade Math A #])+SUM([MCAS 10thGrade Math NI #])+SUM([MCAS 10thGrade Math P #])+SUM([MCAS 10thGrade Math W/F #])) and used “format number” to make Tableau output the results as percentages before formatting the graphs into concise dashboards.</p>
+      <p>With the 2017 data, I set out to match my 2023 visualizations and make similar interpretations. Here, I had to set up calculated fields in Tableau to compute the percentages of students at each achievement level. I coded in some basic averages e.g.</p> 
+	      
+      <p>SUM([MCAS 10thGrade Math A #])/(SUM([MCAS 10thGrade Math A #])+SUM([MCAS 10thGrade Math NI #])+SUM([MCAS 10thGrade Math P #])+SUM([MCAS 10thGrade Math W/F #]))</p>
+	      
+      <p>and used “format number” to make Tableau output the results as percentages before formatting the graphs into concise dashboards.</p>
      
       <img src="Images/2017_vs.png" alt="2017 PVPA vs. State">
 
