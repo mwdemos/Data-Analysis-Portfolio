@@ -1,0 +1,26 @@
+/*Return average percentage of students who scored "A" in South Hadley*/
+SELECT AVG("% MCAS_10thGrade_Math_A") AS average_advanced_10th_shadley
+FROM publicschools
+WHERE "School Name" IN ('Pioneer Valley Performing Arts Charter Public School', 'South Hadley High');
+
+/*Return average percentage of students who scored "A" in Hampshire County*/
+SELECT AVG("% MCAS_10thGrade_Math_A") AS average_advanced_10th_hcounty
+FROM publicschools
+WHERE "School Name" IN ('Amherst Regional High', 'Belchertown High', 'Easthampton High', 'Gateway Regional High', 'Granby Jr Sr High School', 'Hampshire Regional High', 'Hopkins Academy', 'Northampton High', 'Pioneer Valley Chinese Immersion Charter School', 'Pioneer Valley Performing Arts Charter Public School', 'Smith Academy', 'Smith Vocational and Agricultural High', 'South Hadley High', 'Ware Junior/Senior High School');
+
+    /*Return list of values to check if above AVG is correct*/
+    SELECT "% MCAS_10thGrade_Math_A"
+    FROM publicschools
+    WHERE "School Name" IN ('Amherst Regional High', 'Belchertown High', 'Easthampton High', 'Gateway Regional High', 'Granby Jr Sr High School', 'Hampshire Regional High', 'Hopkins Academy', 'Northampton High', 'Pioneer Valley Chinese Immersion Charter School', 'Pioneer Valley Performing Arts Charter Public School', 'Smith Academy', 'Smith Vocational and Agricultural High', 'South Hadley High', 'Ware Junior/Senior High School')
+    ORDER BY "% MCAS_10thGrade_Math_A" DESC;
+
+/*Return average percentage of students who scored "A" in the Pioneer Valley*/
+SELECT AVG("% MCAS_10thGrade_Math_A") AS average_advanced_10th_pvalley
+FROM publicschools
+WHERE "School Name" IN ('Amherst Regional High', 'Belchertown High', 'Chicopee Comprehensive High School', 'Chicopee High', 'Conservatory of the Arts', 'Easthampton High', 'Four Rivers Charter Public School', 'Frontier Regional', 'Gateway Regional High', 'Granby Jr Sr High School', 'Greenfield High', 'Hampden Charter School of Science', 'Hampshire Regional High', 'High School Of Commerce', 'Holyoke High', 'Hopkins Academy', 'John J Duggan Middle', 'Massachusetts Virtual Academy at Greenfield Commonwealth Virtual School', 'Mohawk Trail Regional High', 'Northampton High', 'Paulo Freire Social Justice Charter School', 'Phoenix Academy Public Charter High School Springfield', 'Pioneer Valley Chinese Immersion Charter School', 'Pioneer Valley Performing Arts Charter Public School', 'Roger L. Putnam Vocational Technical Academy', 'Sabis International Charter School', 'Smith Academy', 'Smith Vocational and Agricultural High', 'South Hadley High', 'Springfield Central High', 'Springfield High School of Science and Technology', 'Springfield Public Day High School', 'The Springfield Renaissance School an Expeditionary Learning School', 'Turners Fall High', 'Ware Junior/Senior High School', 'Westfield High', 'Westfield Technical Academy', 'Wm J Dean Vocational Technical High');
+
+    /*Return list of values to check if above AVG is correct*/
+    SELECT "School Name", "% MCAS_10thGrade_Math_A"
+    FROM publicschools
+    WHERE "School Name" IN ('Amherst Regional High', 'Belchertown High', 'Chicopee Comprehensive High School', 'Chicopee High', 'Conservatory of the Arts', 'Easthampton High', 'Four Rivers Charter Public School', 'Frontier Regional', 'Gateway Regional High', 'Granby Jr Sr High School', 'Greenfield High', 'Hampden Charter School of Science', 'Hampshire Regional High', 'High School Of Commerce', 'Holyoke High', 'Hopkins Academy', 'John J Duggan Middle', 'Massachusetts Virtual Academy at Greenfield Commonwealth Virtual School', 'Mohawk Trail Regional High', 'Northampton High', 'Paulo Freire Social Justice Charter School', 'Phoenix Academy Public Charter High School Springfield', 'Pioneer Valley Chinese Immersion Charter School', 'Pioneer Valley Performing Arts Charter Public School', 'Roger L. Putnam Vocational Technical Academy', 'Sabis International Charter School', 'Smith Academy', 'Smith Vocational and Agricultural High', 'South Hadley High', 'Springfield Central High', 'Springfield High School of Science and Technology', 'Springfield Public Day High School', 'The Springfield Renaissance School an Expeditionary Learning School', 'Turners Fall High', 'Ware Junior/Senior High School', 'Westfield High', 'Westfield Technical Academy', 'Wm J Dean Vocational Technical High')
+    ORDER BY "School Name";
