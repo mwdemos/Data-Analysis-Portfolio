@@ -30,7 +30,7 @@
     <h1 style="font-family: Calibri;">2023 Scores</h1>
       <p style="line-height:1.5; font-family: Calibri;">To get an idea of how PVPA students did, I imported the data into Tableau and created some bar graphs with the x- and y-axes as achievement level and percentage of students, respectively. I started with a PVPA-specific y-axis and then made similar graphs with the statewide averages. In Tableau, I had to add table calculations to get percentage outputs from the PVPA raw score inputs, import percentage values directly from the DoE data, and add some dashboard formatting to make the visualizations easier to read.</p>
 
-      <img src="Images/2023_vs.png" alt="2023 PVPA vs. State" style="margin-left: 1vw;">
+      <img src="images/2023_vs.png" alt="2023 PVPA vs. State" style="margin-left: 1vw;">
 	
       <p style="line-height:1.5; font-family: Calibri;">In the 2023 visualizations, we can see from the graphs that PVPA has a consistently lower percentage of students who exceeded expectations. For those who met expectations, the percent of 7th and 10th grade students is quite similar between PVPA and the state, considering that the PVPA 7th graders are only about 5 percent fewer than the state average and there are about 4 percent more PVPA 10th graders than statewide at this achievement level. In 8th grade, however, we see a whopping 25 percent fewer PVPA students meeting expectations than the state. Another striking difference between PVPA and the state is the greater percentage of PVPA students across all three grade levels who partially met expectations. At this achievement level, the state has 40 or 42 percent of its students in each grade level while PVPA students make up about 56, 67, and 47 percent in 7th, 8th, and 10th grade respectively. All six of the 2023 graphs appear to be skewed left with both PVPA and state 10th grade much closer to a normal distribution than the other grades, suggesting that generally more 7th and 8th grade students scored on the lower end while 10th graders’ scores are centered symmetrically around the middle.</p>
 	
@@ -41,7 +41,7 @@
 	
       <p style="line-height:1.5; font-family: Calibri;">and used “format number” to make Tableau output the results as percentages before formatting the graphs into concise dashboards.</p>
      
-      <img src="Images/2017_vs.png" alt="2017 PVPA vs. State" style="margin-left: 1vw;">
+      <img src="images/2017_vs.png" alt="2017 PVPA vs. State" style="margin-left: 1vw;">
 
       <p style="line-height:1.5; font-family: Calibri;">This data appears to be confounding. When comparing PVPA and the state, the 2023 data follows a loosely similar shape and here it does not. First, we can see in the PVPA data that grades 7 and 8 have a similar, more centered shape that is much different from that of grade 10 which is skewed right. The 10th grade scores tend to include significantly more on the higher end, most likely due to the fact that passing is a requirement for graduation. This trend can be seen in the 2023 data too. Crucially, another factor at play here is the difference in the tests themselves. Since the Next Generation MCAS test made its <a href="https://www.doe.mass.edu/news/news.aspx?id=24639">debut</a> in 2017 only in grades 3-8, we should expect to see a difference in performance between middle school and high school scores, such as fewer scores on the high end resulting in a skew left, like we saw clearly in the 2023 statewide data. Except the statewide 2017 middle school data doesn’t follow that pattern. Instead, the middle school graphs have the same shape as the high school graph, with quite a few more percentage points in the higher achievement levels than we should anticipate. Furthermore, the PVPA and state 10th grade graphs are quite similar.</p>
 
@@ -53,11 +53,11 @@
 
       <p style="line-height:1.5; font-family: Calibri;">I wondered if the same pattern exists on a smaller scale. To find out where PVPA lands locally, I used the 2017 data available to me to compare PVPA on three levels: town (South Hadley), county (Hampshire), and region (Pioneer Valley). I created graphs with x representing schools and y representing percent of students. Filtering the “town” measure created a list of checkboxes that allowed me to show the percentages for whichever towns I needed for each of the three local levels. Before making my inferences, I made the graphs more presentable and easy to read with formatting such as excluding null values, sorting, highlighting, normalizing axis scaling, and removing clutter from headers, captions, and titles.</p>
 	
-      <img src="Images/2017_Advanced.png" alt="2017 Local A Percentages" style="margin-left: 1vw;">
+      <img src="images/2017_Advanced.png" alt="2017 Local A Percentages" style="margin-left: 1vw;">
 
       <p style="line-height:1.5; font-family: Calibri;">For the percentage of students who received “advanced,” the graphs show PVPA as being on par with South Hadley, in the top five out of fourteen schools in Hampshire County, and with the seventh highest percentage out of thirty-eight schools in the Pioneer Valley. In each level, the difference in percentage between the top school and PVPA was only seven percent.</p>
 
-      <img src="Images/2017_Needs_Improvement.png" alt="2017 Local NI Percentages" style="margin-left: 1vw;">
+      <img src="images/2017_Needs_Improvement.png" alt="2017 Local NI Percentages" style="margin-left: 1vw;">
 
       <p style="line-height:1.5; font-family: Calibri;">Additionally, we can see that PVPA had a very low percentage of students at the “needs improvement” level. It had the lowest percentage out of all schools at the town and county level, and in the Pioneer Valley it was second only to one school, the Hampden Charter School of Science. It’s clear that the pattern did not translate to the smaller scale. PVPA might have had a lower percentage at the highest score compared statewide, but not compared to its surrounding schools, with an exceptionally low proportion of students who failed.</p>
 
