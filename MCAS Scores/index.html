@@ -1,0 +1,68 @@
+<html>
+<head>
+
+    <title>MCAS Scores</title>
+
+    <script type="text/javascript"
+	    src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript"></script>
+
+</head>
+
+<body>
+
+  <h1 style="font-family: Calibri;">MCAS Scores</h1>
+    <p style="line-height:1.5; font-family: Calibri; font-size:100%;">In Spring, my mathematics department discussed our students' recently released MCAS scores (grades 7, 8 and 10). MCAS scores are important to consider due to their implications about student learning. Students are also required to pass MCAS tests in 10th grade in order to graduate from high school. The state of Massachusetts uses MCAS scores as benchmarks not only for student learning but for schools' performance as well. The MCAS test changed in 2017--the old, 2017 and earlier version is now referred to as the "Legacy" test and the newer version is called the "Next Generation" test. I took publicly available data regarding 2017 and 2023 MCAS scores from a .csv file online as well as from my team and the MA Department of Education’s website for this project.
+    <ul>
+      <li style="font-family: Calibri;"><a href="https://www.kaggle.com/datasets/ndalziel/massachusetts-public-schools-data">Data - MA Public Shools 2017 .csv file</a></li>
+      <li style="font-family: Calibri;"><a href="https://docs.google.com/spreadsheets/d/156-7VIwvcECQ2-qEoWfQ82kMdgncBF4MGzSyNVbN5qc/edit?gid=0#gid=0">Data - PVPA MCAS Scores 2023 spreadsheet</a></li>
+      <li style="font-family: Calibri;"><a href="https://profiles.doe.mass.edu/staterc/?fyCode=2023">Data - MA DoE</a></li>
+      <li style="font-family: Calibri;"><a href="https://public.tableau.com/views/MCASScores_17204477306580/2023PVPA?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">Complete Tableau Workbook</a></li>
+    </ul></p>
+    <p style="line-height:1.5; font-family: Calibri;">My goal was to use the data to compare my school, Pioneer Valley Performing Arts, to the rest of the state in terms of mathematics MCAS scores.</p>
+	
+    <button style="margin-bottom: 10px; margin-left: 1vw;" id = "exportPDF">Generate PDF</button>
+    <button style="margin-bottom: 10px;" id = "exportImage">Generate Image</button>
+	
+    <div style="margin-left: 1vw;" id="vizContainer"></div>
+    <script src="./app.js"></script>
+
+    <h1 style="font-family: Calibri;">2023 Scores</h1>
+      <p style="line-height:1.5; font-family: Calibri;">To get an idea of how PVPA students did, I imported the data into Tableau and created some bar graphs with the x- and y-axes as achievement level and percentage of students, respectively. I started with a PVPA-specific y-axis and then made similar graphs with the statewide averages. In Tableau, I had to add table calculations to get percentage outputs from the PVPA raw score inputs, import percentage values directly from the DoE data, and add some dashboard formatting to make the visualizations easier to read.</p>
+
+      <img src="Images/2023_vs.png" alt="2023 PVPA vs. State" style="margin-left: 1vw;">
+	
+      <p style="line-height:1.5; font-family: Calibri;">In the 2023 visualizations, we can see from the graphs that PVPA has a consistently lower percentage of students who exceeded expectations. For those who met expectations, the percent of 7th and 10th grade students is quite similar between PVPA and the state, considering that the PVPA 7th graders are only about 5 percent fewer than the state average and there are about 4 percent more PVPA 10th graders than statewide at this achievement level. In 8th grade, however, we see a whopping 25 percent fewer PVPA students meeting expectations than the state. Another striking difference between PVPA and the state is the greater percentage of PVPA students across all three grade levels who partially met expectations. At this achievement level, the state has 40 or 42 percent of its students in each grade level while PVPA students make up about 56, 67, and 47 percent in 7th, 8th, and 10th grade respectively. All six of the 2023 graphs appear to be skewed left with both PVPA and state 10th grade much closer to a normal distribution than the other grades, suggesting that generally more 7th and 8th grade students scored on the lower end while 10th graders’ scores are centered symmetrically around the middle.</p>
+	
+    <h1 style="font-family: Calibri;">2017 Scores</h1>
+      <p style="line-height:1.5; font-family: Calibri;">With the 2017 data, I set out to match my 2023 visualizations and make similar interpretations. Here, I had to set up calculated fields in Tableau to compute the percentages of students at each achievement level. I coded in some basic averages e.g.</p> 
+
+      <div style="padding-left: 1vw; font-family: monospace, monospace;"> <p><span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math A #]</span>)/(<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math A #]</span>)+<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math NI #]</span>)+<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math P #]</span>)+<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math W/F #]</span>))</p></div>
+	
+      <p style="line-height:1.5; font-family: Calibri;">and used “format number” to make Tableau output the results as percentages before formatting the graphs into concise dashboards.</p>
+     
+      <img src="Images/2017_vs.png" alt="2017 PVPA vs. State" style="margin-left: 1vw;">
+
+      <p style="line-height:1.5; font-family: Calibri;">This data appears to be confounding. When comparing PVPA and the state, the 2023 data follows a loosely similar shape and here it does not. First, we can see in the PVPA data that grades 7 and 8 have a similar, more centered shape that is much different from that of grade 10 which is skewed right. The 10th grade scores tend to include significantly more on the higher end, most likely due to the fact that passing is a requirement for graduation. This trend can be seen in the 2023 data too. Crucially, another factor at play here is the difference in the tests themselves. Since the Next Generation MCAS test made its <a href="https://www.doe.mass.edu/news/news.aspx?id=24639">debut</a> in 2017 only in grades 3-8, we should expect to see a difference in performance between middle school and high school scores, such as fewer scores on the high end resulting in a skew left, like we saw clearly in the 2023 statewide data. Except the statewide 2017 middle school data doesn’t follow that pattern. Instead, the middle school graphs have the same shape as the high school graph, with quite a few more percentage points in the higher achievement levels than we should anticipate. Furthermore, the PVPA and state 10th grade graphs are quite similar.</p>
+
+      <p style="line-height:1.5; font-family: Calibri;">So, the middle school data raises some red flags. I took a closer look at the 2017 data to find out why. I noticed that the middle school data is recorded in Legacy scores (advanced, proficient, needs improvement, and warning/failing), but every middle schooler across the state took the Next Generation test that year. I went straight to the source and dug through the MA DoE website and found some 2017 test score data. The percentages didn’t match up (the data from other years does in fact seem to match). So, the 2017 middle school values in the data source I used are flawed. Though, the incorrect values are actually somewhat similar to previous years’ Legacy test scores. Perhaps the compiler of this data source took averages from previous years and inserted that into 2017 instead of using next gen scores, in order to keep some standardization amongst the data, but I can only guess.</p>
+
+    <h1 style="font-family: Calibri;">Comparing "Advanced" and "Needs Improvement" Scores at a Local Level</h1>
+
+      <p style="line-height:1.5; font-family: Calibri;">One of the things we spoke about in our department meetings was the amount of students that scored at the highest level. PVPA students have fewer of these scores than the state, which was also true in 2017 and especially true for middle school. This is evident in my visualizations–the PVPA graphs are more dense in the center and less dense on the ends.</p>
+
+      <p style="line-height:1.5; font-family: Calibri;">I wondered if the same pattern exists on a smaller scale. To find out where PVPA lands locally, I used the 2017 data available to me to compare PVPA on three levels: town (South Hadley), county (Hampshire), and region (Pioneer Valley). I created graphs with x representing schools and y representing percent of students. Filtering the “town” measure created a list of checkboxes that allowed me to show the percentages for whichever towns I needed for each of the three local levels. Before making my inferences, I made the graphs more presentable and easy to read with formatting such as excluding null values, sorting, highlighting, normalizing axis scaling, and removing clutter from headers, captions, and titles.</p>
+	
+      <img src="Images/2017_Advanced.png" alt="2017 Local A Percentages" style="margin-left: 1vw;">
+
+      <p style="line-height:1.5; font-family: Calibri;">For the percentage of students who received “advanced,” the graphs show PVPA as being on par with South Hadley, in the top five out of fourteen schools in Hampshire County, and with the seventh highest percentage out of thirty-eight schools in the Pioneer Valley. In each level, the difference in percentage between the top school and PVPA was only seven percent.</p>
+
+      <img src="Images/2017_Needs_Improvement.png" alt="2017 Local NI Percentages" style="margin-left: 1vw;">
+
+      <p style="line-height:1.5; font-family: Calibri;">Additionally, we can see that PVPA had a very low percentage of students at the “needs improvement” level. It had the lowest percentage out of all schools at the town and county level, and in the Pioneer Valley it was second only to one school, the Hampden Charter School of Science. It’s clear that the pattern did not translate to the smaller scale. PVPA might have had a lower percentage at the highest score compared statewide, but not compared to its surrounding schools, with an exceptionally low proportion of students who failed.</p>
+
+    <h1 style="font-family: Calibri;">Conclusions and Areas for Further Analysis</h1>
+	
+</body>
+
+</html>
