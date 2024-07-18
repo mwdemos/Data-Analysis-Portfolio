@@ -37,7 +37,7 @@
     <h1 style="font-family: Calibri;">2017 Scores</h1>
       <p style="line-height:1.5; font-family: Calibri;">With the 2017 data, I set out to match my 2023 visualizations and make similar interpretations. Here, I had to set up calculated fields in Tableau to compute the percentages of students at each achievement level. I coded in some basic averages e.g.</p> 
 
-      <div style="padding-left: 1vw; font-family: monospace, monospace;"> <p><span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math A #]</span>)/(<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math A #]</span>)+<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math NI #]</span>)+<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math P #]</span>)+<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math W/F #]</span>))</p></div>
+        <div style="padding-left: 1vw; font-family: monospace, monospace;"> <p><span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math A #]</span>)/(<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math A #]</span>)+<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math NI #]</span>)+<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math P #]</span>)+<span style="color: #333FFF;">SUM</span>(<span style="color: #FF7400;">[MCAS 10thGrade Math W/F #]</span>))</p></div>
 	
       <p style="line-height:1.5; font-family: Calibri;">and used “format number” to make Tableau output the results as percentages before formatting the graphs into concise dashboards.</p>
      
@@ -49,14 +49,18 @@
 
     <h1 style="font-family: Calibri;">Comparing "Advanced" Scores at a Local Level</h1>
 
-      <p style="line-height:1.5; font-family: Calibri;">One of the things we spoke about in our department meetings was the amount of students that scored at the highest level. PVPA students have fewer of these scores than the state, which was also true in 2017 and especially true for middle school. This is evident in my visualizations–the PVPA graphs are more dense in the center and less dense on the ends.</p>
+      <p style="line-height:1.5; font-family: Calibri;">One of the things we spoke about in our department meetings was the amount of students that scored at the highest level. PVPA students had fewer of these scores than the state, which was especially true for middle school. It was also true in 2017, except for tenth grade. Here, PVPA had a slightly higher percentage than the state average.</p>
 
-      <p style="line-height:1.5; font-family: Calibri;">I wondered if the same pattern exists on a smaller scale. To find out where PVPA lands locally, I used the 2017 data available to me to compare PVPA on three levels: town (South Hadley), county (Hampshire), and region (Pioneer Valley). I created graphs with x representing schools and y representing percent of students. Filtering the “town” measure created a list of checkboxes that allowed me to show the percentages for whichever towns I needed for each of the three local levels. Before making my inferences, I made the graphs more presentable and easy to read with formatting such as excluding null values, sorting, highlighting, normalizing axis scaling, and removing clutter from headers, captions, and titles.</p>
+      <p style="line-height:1.5; font-family: Calibri;">I wondered where PVPA lands more locally. I used the 2017 data available to me to compare PVPA on three levels: town (South Hadley), county (Hampshire), and region (Pioneer Valley). I created graphs with x representing schools and y representing percent of students. Filtering the “town” measure created a list of checkboxes that allowed me to show the percentages for whichever towns I needed for each of the three local levels. Before making my inferences, I made the graphs more presentable and easy to read with formatting such as excluding null values, sorting, highlighting, normalizing axis scaling, and removing clutter from headers, captions, and titles.</p>
 	
       <img src="images/2017_Advanced.png" alt="2017 Local A Percentages" style="margin-left: 1vw;">
 
-      <p style="line-height:1.5; font-family: Calibri;">For the percentage of students who received “advanced,” the graphs show PVPA as being on par with South Hadley, in the top five out of fourteen schools in Hampshire County, and with the seventh highest percentage out of thirty-eight schools in the Pioneer Valley. In each level, the difference in percentage between the top school and PVPA was only seven percent. It’s clear that the pattern did not translate to the smaller scale in 2017. PVPA might have had a lower percentage at the highest score compared statewide, but not compared to its surrounding schools.</p>
+      <p style="line-height:1.5; font-family: Calibri;">For the percentage of students who received the highest score, “advanced,” the graphs show PVPA as being on par with South Hadley. It was in the top five out of fourteen schools in Hampshire County, and it had the seventh highest percentage out of thirty-eight schools in the Pioneer Valley. In each level, the difference in percentage between the top school and PVPA was only seven percent.</p>
 
+      <p style="line-height:1.5; font-family: Calibri;">I also calculated the Hampshire County average and Pioneer Valley average by using SQL queries like the one below.</p>
+
+        <div style="padding-left: 1vw; background-color:black; font-family: monospace, monospace;"> <p><span style="color: #FFFFFF;">SELECT </span><span style="color: #C7C7C7;">AVG("% MCAS_10thGrade_Math_A") </span><span style="color: #FFFFFF;">AS </span><span style="color: #C7C7C7;">average_advanced_10th_hcounty</span></p>
+	
     <h1 style="font-family: Calibri;">Conclusions and Areas for Further Analysis</h1>
 	
 </body>
