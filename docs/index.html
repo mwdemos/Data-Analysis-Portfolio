@@ -21,12 +21,12 @@
       <li style="font-family: Calibri;"><a href="https://public.tableau.com/views/MCASScores_17204477306580/2023PVPA?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link">Complete Tableau Workbook</a></li>	    
     </ul></p>
     <p style="line-height:1.5; font-family: Calibri;">My goal was to use the data to compare my school, Pioneer Valley Performing Arts, to the rest of the state in terms of mathematics MCAS scores.</p>
+
+    <button style="margin-bottom: 15px; margin-left: 1vw;" id = "exportPDF">Generate PDF</button>
+    <button style="margin-bottom: 15px;" id = "exportImage">Generate Image</button>
 	
     <div style="margin-left: 1vw;" id="vizContainer"></div>
     <script src="./app.js"></script>
-
-    <button style="margin-bottom: 10px; margin-left: 1vw;" id = "exportPDF">Generate PDF</button>
-    <button style="margin-bottom: 10px;" id = "exportImage">Generate Image</button>
 
     <h1 style="font-family: Calibri;">2023 Scores</h1>
       <p style="line-height:1.5; font-family: Calibri;">To get an idea of how PVPA students did, I imported the data into Tableau and created some bar graphs with the x- and y-axes as achievement level and percentage of students, respectively. I started with a PVPA-specific y-axis and then made similar graphs with the statewide averages. In Tableau, I had to add table calculations to get percentage outputs from the PVPA raw score inputs, import percentage values directly from the DoE data, and add some dashboard formatting to make the visualizations easier to read.</p>
