@@ -6,7 +6,7 @@ Hi, I'm Mike. I'm a mathematics teacher with a growing passion for working with 
 
 ## Tools:
 - Languages: SQL
-- Database management: SQLite
+- Database management: SQLite / SQLiteStudio
 - Visualization: Tableau
 
 ## Projects:
