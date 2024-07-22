@@ -18,7 +18,7 @@ Forcing game titles to be unique is handy for stopping me when I accidentally tr
 I actually used the following INSERT query to add a multitude of games into my table but kept it to just one game here for the sake of brevity.
 
     INSERT INTO games
-    VALUES ('Demon''s Souls', 'PS5', 2020, 'RPG', 'no', 'no', 'Soulsborne');
+    VALUES ('Baldur''s Gate 3', 'PC', 2023, 'RPG', 'yes', 'no', 'Baldur''s Gate');
 
 The following are a few queries I wrote to practice making table edits, such as updating my list to include games I recently purchased from the Steam Summer Sale, and deleting The Outer Worlds from the list once I completed the game.
 
@@ -66,4 +66,9 @@ I also had a smaller, less detailed [list of just Super Nintendo games](https://
 
     SELECT * FROM snes_wishlist;
 
-I wanted to incorporate these games into the larger 'games' table. For JOIN practice, I joined the tables to check if any Super Nintendo Wishlist were missing from the 'games' table. If there were, then I knew there were games I forgot to add.
+I wanted to incorporate these games into the larger 'games' table. For JOIN practice, I joined the tables to check if any Super Nintendo Wishlist were missing from the 'games' table. The output showed that there were some missing titles, which told me that I needed to add to the 'games' table.
+
+    SELECT title FROM snes_wishlist
+    LEFT JOIN games ON snes_wishlist.title = games.title
+    WHERE games.title IS NULL;
+
