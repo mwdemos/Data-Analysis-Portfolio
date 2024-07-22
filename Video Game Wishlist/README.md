@@ -15,18 +15,22 @@ I actually used the following INSERT query to add a multitude of games into my t
     INSERT INTO games
     VALUES ('Demon''s Souls', 'PS5', 2020, 'RPG', 'no', 'no', 'Soulsborne');
 
-To check my complete list: [(code output)](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_orderByFranchise.pdf)
+After adding so much, I needed to check the [final resulting table](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_orderByFranchise.pdf).
 
     SELECT * FROM games
     ORDER BY franchise;
 
-To determine which game to play next, it helps to know which of my games I've started but haven't finished: [(code output)](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_started.pdf)
+It looks like the majority of the games might be RPGs. I can use the following query to find out the percentage.
+
+    SELECT (SELECT COUNT(*) FROM games WHERE genre = 'RPG')*100.0 / (SELECT COUNT(*) FROM games) AS rpg_percentage;
+
+To determine which game to play next, it helps to know which of my games I've started but haven't finished: The [resulting list](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_started.pdf) tells me that I have some unfinished business!
 
     SELECT * FROM games
     WHERE started='yes'
     ORDER BY franchise;
 
-The following are a couple of practice queries, such as updating the list to include games I recently purchased from the Steam Summer Sale, and deleting The Outer Worlds from the list once I completed it.
+The following are few queries I wrote to practice changing tables, such as updating the list to include games I recently purchased from the Steam Summer Sale, and deleting The Outer Worlds from the list once I completed it.
 
     UPDATE games
     SET owned='yes', started='no'
