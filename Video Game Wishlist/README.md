@@ -15,12 +15,12 @@ I actually used the following INSERT query to add a multitude of games into my t
     INSERT INTO games
     VALUES ('Demon''s Souls', 'PS5', 2020, 'RPG', 'no', 'no', 'Soulsborne');
 
-To check my complete list: [code output](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_orderByFranchise.pdf)
+To check my complete list: [(code output)](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_orderByFranchise.pdf)
 
     SELECT * FROM games
     ORDER BY franchise;
 
-To determine which game to play next, it helps to know which of my games I've started but haven't finished: [code output](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_started.pdf)
+To determine which game to play next, it helps to know which of my games I've started but haven't finished: [(code output)](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_started.pdf)
 
     SELECT * FROM games
     WHERE started='yes'
