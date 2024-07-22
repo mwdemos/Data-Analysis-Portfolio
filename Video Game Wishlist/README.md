@@ -55,13 +55,13 @@ To determine which game to play next, it helps to know which of my games I've st
 
 ## Joining Tables
 
-I had a smaller list of just Super Nintendo games that I decided to switch over to SQL too.
+I also had a smaller, less detailed list of just Super Nintendo games that I had already created. I wanted to incorporate these games into the larger 'games' table. For JOIN practice, I joined the tables to check if any Super Nintendo Wishlist were missing from the 'games' table. If there were, then I knew there were games I forgot to add.
 
     CREATE TABLE snes_wishlist (
     title TEXT
     );
 
     INSERT INTO snes_wishlist
-    VALUES ('Megaman X');
+    VALUES ('Secret of Mana'),('Final Fantasy III (VI)'),('Super Castlevania 4'),('Tetris Attack'),('Turtles in Time'),('Chrono Trigger'),('Super Mario RPG'),('Megaman X');
 
     SELECT * FROM snes_wishlist;
