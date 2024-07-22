@@ -2,7 +2,7 @@
 
 Before this project, I kept a list of games I wanted but didn't own, or owned but didn't finish playing. I kept it in the notes app on my phone. After some time, the list got long and disorganized. If I'm in the mood for a platformer, I want to be able to reorder my list by genre. If I'm curious how many Mario games I own and haven't finished playing, I want to be able to sort my list by franchise. If I'm trying to justify buying a new console like a PlayStation 5, maybe I want to see how many of my wishlist games are PS5 exclusives. The notes app didn't cut it. SQL did though! Of course, it didn't hurt that I wanted extra SQL practice anyways. So, I created the table below.
 
-## Creating and Editing the "games" Table
+# Creating and Editing the "games" Table
 Forcing game titles to be unique is handy for stopping me when I accidentally try to add a game twice.
 
     CREATE TABLE games (
@@ -36,7 +36,7 @@ The following are a few queries I wrote to practice making table edits, such as 
     DELETE FROM games
     WHERE title = 'The Outer Worlds';
 
-## Filtering and Aggregating 
+# Filtering and Aggregating 
 
 After adding so much, I needed to check the [final resulting table](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_orderByFranchise.pdf).
 
@@ -53,7 +53,7 @@ To determine which game to play next, it helps to know which of my games I've st
     WHERE started='yes'
     ORDER BY franchise;
 
-## Joining Tables
+# Joining Tables
 
 I also had a smaller, less detailed [list of just Super Nintendo games](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_snes_wishlist_output.pdf) that I had already created. I wanted to incorporate these games into the larger 'games' table. For JOIN practice, I joined the tables to check if any Super Nintendo Wishlist were missing from the 'games' table. If there were, then I knew there were games I forgot to add.
 
