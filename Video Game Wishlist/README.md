@@ -55,7 +55,7 @@ To determine which game to play next, it helps to know which of my games I've st
 
 ## Joining Tables
 
-I had a smaller list of specifically Super Nintendo games that I decided to switch over to SQL too.
+I had a smaller list of just Super Nintendo games that I decided to switch over to SQL too.
 
     CREATE TABLE snes_wishlist (
     title TEXT
