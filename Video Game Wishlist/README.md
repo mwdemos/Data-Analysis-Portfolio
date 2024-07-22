@@ -19,7 +19,7 @@ I actually used the following INSERT query to add a multitude of games into my t
     INSERT INTO games
     VALUES ('Demon''s Souls', 'PS5', 2020, 'RPG', 'no', 'no', 'Soulsborne');
 
-The following are a few queries I wrote to practice making table edits, such as updating the list to include games I recently purchased from the Steam Summer Sale, and deleting The Outer Worlds from the list once I completed it.
+The following are a few queries I wrote to practice making table edits, such as updating my list to include games I recently purchased from the Steam Summer Sale, and deleting The Outer Worlds from the list once I completed it.
 
     UPDATE games
     SET owned='yes', started='no'
