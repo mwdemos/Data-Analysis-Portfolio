@@ -55,7 +55,7 @@ To determine which game to play next, it helps to know which of my games I've st
 
 ## Joining Tables
 
-I also had a smaller, less detailed list of just Super Nintendo games that I had already created. I wanted to incorporate these games into the larger 'games' table. For JOIN practice, I joined the tables to check if any Super Nintendo Wishlist were missing from the 'games' table. If there were, then I knew there were games I forgot to add.
+I also had a smaller, less detailed [list of just Super Nintendo games](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_snes_wishlist_output.pdf) that I had already created. I wanted to incorporate these games into the larger 'games' table. For JOIN practice, I joined the tables to check if any Super Nintendo Wishlist were missing from the 'games' table. If there were, then I knew there were games I forgot to add.
 
     CREATE TABLE snes_wishlist (
     title TEXT
