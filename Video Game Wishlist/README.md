@@ -66,7 +66,7 @@ I also had a smaller, less detailed [list of just Super Nintendo games](https://
 
     SELECT * FROM snes_wishlist;
 
-I wanted to incorporate these games into the larger 'games' table. For JOIN practice, I joined the tables to check if any Super Nintendo Wishlist were missing from the 'games' table. The output showed that there were some missing titles, which told me that I needed to add to the 'games' table.
+I wanted to incorporate these games into the larger 'games' table. For JOIN practice, I joined the tables to check if any Super Nintendo Wishlist were missing from the 'games' table. The [output](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_snes_wishlist_join.pdf) showed that there were some missing titles, which told me that I needed to add to the 'games' table.
 
     SELECT title FROM snes_wishlist
     LEFT JOIN games ON snes_wishlist.title = games.title
