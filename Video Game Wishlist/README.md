@@ -30,7 +30,7 @@ To determine which game to play next, it helps to know which of my games I've st
     WHERE started='yes'
     ORDER BY franchise;
 
-The following are few queries I wrote to practice changing tables, such as updating the list to include games I recently purchased from the Steam Summer Sale, and deleting The Outer Worlds from the list once I completed it.
+The following are few queries I wrote to practice making table edits, such as updating the list to include games I recently purchased from the Steam Summer Sale, and deleting The Outer Worlds from the list once I completed it.
 
     UPDATE games
     SET owned='yes', started='no'
