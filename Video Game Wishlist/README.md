@@ -72,4 +72,4 @@ I wanted to incorporate these games into the larger 'games' table. For JOIN prac
     LEFT JOIN games ON snes_wishlist.title = games.title
     WHERE games.title IS NULL;
 
-That concludes my work with this project for now. In playing around with SQL I got some experience and practice with writing basic queries, creating and editing tables, filtering and aggregating data, and making a simple join. I'm looking forward to referring back to my syntax and queries here as examples for future projects!
+That concludes my work with this project for now. In playing around with SQL I got some experience and practice with writing basic queries, creating and editing tables, filtering and aggregating data, and making a simple join. I'm looking forward to referring back to my code here and using them as examples to help with future projects!
