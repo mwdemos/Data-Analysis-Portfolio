@@ -20,7 +20,7 @@ After adding so much, I needed to check the [final resulting table](https://gith
     SELECT * FROM games
     ORDER BY franchise;
 
-It looks like the majority of the games might be RPGs. I can use the following query to find out the percentage.
+It looks like the majority of the games might be RPGs. I can use the following query to find out the [percentage](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_rpg_percentage.pdf).
 
     SELECT (SELECT COUNT(*) FROM games WHERE genre = 'RPG')*100.0 / (SELECT COUNT(*) FROM games) AS rpg_percentage;
 
