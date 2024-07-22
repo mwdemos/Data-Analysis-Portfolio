@@ -14,7 +14,7 @@ Before this project, I kept a list of games I wanted but didn't own, or owned bu
     franchise TEXT
     );
 
-I actually used the following INSERT query to add a multitude of games into my table but kept it to one here for the sake of brevity.
+I actually used the following INSERT query to add a multitude of games into my table but kept it to just one game here for the sake of brevity.
 
     INSERT INTO games
     VALUES ('Demon''s Souls', 'PS5', 2020, 'RPG', 'no', 'no', 'Soulsborne');
