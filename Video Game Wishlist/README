@@ -1,7 +1,7 @@
 Before this project, I kept a list of games I wanted but didn't own, or owned but didn't finish playing in the notes app on my phone. After some time, the list got long and disorganized. If I'm in the mood for a platformer, I want to be able to reorder my list by genre. If I'm curious how many Mario games I own and haven't finished playing, I want to be able to sort my list by franchise. If I'm trying to justify buying a new console like a PlayStation 5, maybe I want to see how many of my wishlist games are PS5 exclusives. So, the notes app didn't cut it. SQL did, though! Plus, it didn't hurt that I wanted extra practice writing SQL queries anyways. So, I created the table below.
 
     CREATE TABLE games (
-    title TEXT UNIQUE,
+    title TEXT UNIQUE, /*Having the title be unique is handy for stopping me when I accidentally try to insert a game into the table twice.*/
     console TEXT,
     release_date YEAR,
     genre TEXT,
@@ -15,16 +15,22 @@ I actually used the following INSERT query to insert a multitude of games into m
     INSERT INTO games
     VALUES ('Demon''s Souls', 'PS5', 2020, 'RPG', 'no', 'no', 'Soulsborne');
 
-To check my list, and to get an idea of which of my games are unfinished:
+To check my complete list:
 
     SELECT * FROM games
     ORDER BY franchise;
+
+To determine which game to play next, it helps to know which of my games I've started but haven't finished:
 
     SELECT * FROM games
     WHERE started='yes'
     ORDER BY franchise;
 
-A couple of queries for practice, including deleting The Outer Worlds once I completed the game.
+The following are a couple of practice queries, including updating the list to include games I recently purchased from the Steam Summer Sale and deleting The Outer Worlds from the list once I completed it.
+
+    UPDATE games
+    SET owned='yes', started='no'
+    WHERE title='Cyberpunk 2077';
 
     UPDATE games
     SET console='Game Boy'
