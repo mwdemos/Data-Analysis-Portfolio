@@ -10,7 +10,7 @@ Before this project, I kept a list of games I wanted but didn't own, or owned bu
     franchise TEXT
     );
 
-I actually used the following INSERT query to insert a multitude of games into my table but kept it to one here for the sake of brevity.
+I actually used the following INSERT query to add a multitude of games into my table but kept it to one here for the sake of brevity.
 
     INSERT INTO games
     VALUES ('Demon''s Souls', 'PS5', 2020, 'RPG', 'no', 'no', 'Soulsborne');
@@ -26,7 +26,7 @@ To determine which game to play next, it helps to know which of my games I've st
     WHERE started='yes'
     ORDER BY franchise;
 
-The following are a couple of practice queries, including updating the list to include games I recently purchased from the Steam Summer Sale and deleting The Outer Worlds from the list once I completed it.
+The following are a couple of practice queries, such as updating the list to include games I recently purchased from the Steam Summer Sale, and deleting The Outer Worlds from the list once I completed it.
 
     UPDATE games
     SET owned='yes', started='no'
