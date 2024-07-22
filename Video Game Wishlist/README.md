@@ -20,7 +20,7 @@ To check [my complete list](https://github.com/mwdemos/Data-Analysis-Portfolio/b
     SELECT * FROM games
     ORDER BY franchise;
 
-To determine which game to play next, it helps to know which of my games I've started but haven't finished:
+To determine which game to play next, it helps to know which of my games I've [started but haven't finished](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Video%20Game%20Wishlist/SQL%20Code%20Outputs/VideoGameWishlist_games_output_started.pdf):
 
     SELECT * FROM games
     WHERE started='yes'
