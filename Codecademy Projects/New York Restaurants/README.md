@@ -1,4 +1,4 @@
-# New York Restaurants
+# New York Restaurants - Codecademy
 
 Problem statement: We have put together a table of restaurants called nomnom and we need your help to answer some questions. Use the SQL commands you just learned and find the best dinner spots in the city.
 
