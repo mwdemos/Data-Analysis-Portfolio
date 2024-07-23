@@ -1,3 +1,5 @@
+# Mike's Data Analysis Portfolio
+
 Hi, I'm Mike. I'm a mathematics teacher with a growing passion for working with data. Welcome to my data analysis portfolio, where I showcase projects that I have been working on to develop my skills.
 
 ## Skills Developed:
