@@ -56,12 +56,12 @@ Problem statement: We have put together a table of restaurants called nomnom and
   * review > 2 is Fair
   * Everything else is Poor
 
-      SELECT name,
-        CASE
-          WHEN review > 4.5 THEN 'Extraordinary'
-          WHEN review > 4 THEN 'Excellent'
-          WHEN review > 3 THEN 'Good'
-          WHEN review > 2 THEN 'Fair'
-          ELSE 'Poor'
-        END AS 'Review'
-      FROM nomnom;
+        SELECT name,
+          CASE
+            WHEN review > 4.5 THEN 'Extraordinary'
+            WHEN review > 4 THEN 'Excellent'
+            WHEN review > 3 THEN 'Good'
+            WHEN review > 2 THEN 'Fair'
+            ELSE 'Poor'
+          END AS 'Review'
+        FROM nomnom;
