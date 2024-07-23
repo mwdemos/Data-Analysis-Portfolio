@@ -25,8 +25,7 @@ This data was kindly made publicly available under the MIT license.
 
 * Oh no! While we are looking at the power users, some users are rickrolling--tricking readers into clicking on a link to a funny video and claiming that it links to information about coding. The url of the video is https://www.youtube.com/watch?v=dQw4w9WgXcQ. How many times has each offending user posted this link?
 
-      SELECT user, COUNT(*)
-      FROM hacker_news
+      SELECT user, COUNT(*) FROM hacker_news
       WHERE url IS 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
       GROUP BY user
       ORDER BY COUNT(*) DESC;
