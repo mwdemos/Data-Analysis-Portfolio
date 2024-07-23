@@ -10,13 +10,11 @@ This data was kindly made publicly available under the MIT license.
 
 * Recent studies have found that online forums tend to be dominated by a small percentage of their users (1-9-90 Rule). Is this true of Hacker News? Is a small percentage of Hacker News submitters taking the majority of the points? First find the total score of all the stories.
 
-      SELECT SUM(score)
-      FROM hacker_news;
+      SELECT SUM(score) FROM hacker_news;
 
 * Next, we need to pinpoint the users who have accumulated a lot of points across their stories. Find the individual users who have gotten combined scores of more than 200, and their combined scores.
 
-      SELECT user, SUM(score)
-      FROM hacker_news
+      SELECT user, SUM(score) FROM hacker_news
       GROUP BY user
       HAVING SUM(score) > 200
       ORDER BY 2 DESC;
@@ -27,8 +25,7 @@ This data was kindly made publicly available under the MIT license.
 
 * Oh no! While we are looking at the power users, some users are rickrolling--tricking readers into clicking on a link to a funny video and claiming that it links to information about coding. The url of the video is https://www.youtube.com/watch?v=dQw4w9WgXcQ. How many times has each offending user posted this link?
 
-      SELECT user,
-         COUNT(*)
+      SELECT user, COUNT(*)
       FROM hacker_news
       WHERE url IS 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
       GROUP BY user
@@ -51,8 +48,7 @@ This data was kindly made publicly available under the MIT license.
          WHEN url LIKE '%medium.com%' THEN 'Medium'
          WHEN url LIKE '%nytimes.com%' THEN 'New York Times'
          ELSE 'Other'
-        END AS 'Source',
-        COUNT(*)
+        END AS 'Source', COUNT(*)
       FROM hacker_news
       GROUP BY 1;
 
