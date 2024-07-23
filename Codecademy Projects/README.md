@@ -1,4 +1,4 @@
-Here are my solutions to the Codecademy projects I encountered while taking Codecademy's "Learn SQL" course.
+Here are my solutions to the Codecademy projects I encountered while taking the "Learn SQL" course.
 
 | Project Name | Skills Used |
 | --- | --- |
