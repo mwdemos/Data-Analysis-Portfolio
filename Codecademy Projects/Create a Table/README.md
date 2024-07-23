@@ -1,6 +1,6 @@
 # Create a Table - Codecademy
 
-Problem statement: In this project, you will create your own friends table and add/delete data from it!
+**Problem statement:** In this project, you will create your own friends table and add/delete data from it!
 
 * Create a table named friends with three columns:
   * id that stores INTEGER
