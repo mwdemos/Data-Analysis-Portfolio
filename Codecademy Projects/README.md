@@ -1,6 +1,6 @@
 Here are my solutions to the Codecademy projects I encountered while taking the "Learn SQL" course.
 
-| Project Name | Skills Learned |
+| Project Name | Skills Used |
 | --- | --- |
 | [Create a Table](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Codecademy%20Projects/Create%20a%20Table/README.md) | create & edit tables |
 | [New York Restaurants](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Codecademy%20Projects/New%20York%20Restaurants/README.md) | query relational databases to filter data |
