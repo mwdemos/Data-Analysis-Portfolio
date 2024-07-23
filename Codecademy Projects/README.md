@@ -1,3 +1,5 @@
+# Codecademy Projects
+
 Here are my solutions to the projects I encountered while [taking Codecademy's "Learn SQL" course](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Codecademy%20Projects/Codecademy%20Learn%20SQL%20certificate.pdf).
 
 | Project Name | Skills Used |
