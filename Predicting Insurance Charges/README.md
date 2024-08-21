@@ -15,7 +15,6 @@ The insured represented in the data have an average age around 39, with ages ran
 ![Model](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Predicting%20Insurance%20Charges/Images/charges_stats.png)
 
 ![Model](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Predicting%20Insurance%20Charges/Images/charges_distribution.png)
-
 There is considerable variability in charges made to the insured, with a wide range from near $1,100 to as high as almost $63,800 and a significant standard deviation of approximately $12,100. The distribution of charges is skewed right with the average charge being around $13,300 and a few charges scattered on the much higher end of the distribution. At least 13% of the insured are charged an amount more than one standard deviation greater than the mean (about $25,380).
 
 # Looking for Relationships Between Variables
