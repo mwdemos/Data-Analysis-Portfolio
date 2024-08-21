@@ -1,6 +1,6 @@
 # Statistics Coursework
 
-This coursework involved the use of R, Minitab, and Excel.
+This coursework involved the use of R, Minitab, and Excel (and some LaTeX that was not part of the prescribed coursework but that I added personally for a little extra practice).
 
 | Project Name | Skills Used |
 | --- | --- |
