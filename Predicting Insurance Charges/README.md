@@ -31,3 +31,25 @@ We can see that smokers have clearly higher charges regardless of their age.
 ![Model](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Predicting%20Insurance%20Charges/Images/charges_outliers.png)
 
 Three standard deviations higher than the overall average charge is $49,600.45 (13270.42 + (3*12110.01)). Seven (~0.5%) of the insured represented here are charged more than that amount and are outliers in the dataset. All of them are smokers. In fact, the top 114 highest charged insured are smokers.
+
+![Model](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Predicting%20Insurance%20Charges/Images/bmi_vs_charges_groupedBySmoker.png)
+
+There does not appear to be a correlation between BMI and charges, except for smokers. Charges appear to increase linearly for smokers as BMI increases. For smokers, the highest charges occur after a point of inflection at BMI 30 (obesity).
+
+# Predicting Charges
+
+![Model](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Predicting%20Insurance%20Charges/Images/regression_age_vs_charges.png)
+
+There is a linear correlation between age and charges that can be modeled by the equation y = 257.72x + 3165.9. The correlation is relatively weak with a coefficient of about 0.30. The slope of the trend line tells us that for every increase of 1 year in age, the average charge to the insured increases by about $257.72.
+
+![Model](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Predicting%20Insurance%20Charges/Images/regression_bmi_vs_charges_smokers.png)
+
+There is a strong positive linear correlation between BMI and charges (r=0.81) amongst smokers. The slope of the trend line tells us that generally as BMI increases by one point, smokers’ charges increase by about $1,473.11.
+
+# Conclusions
+
+Smoking and comorbidities clearly have a dramatic impact on both risk and, thus, charges. Analyzing factors like smoking or comorbidities amongst the insured can support pricing decisions in insurance to help manage the risk they take on by providing coverage.
+
+The correlation equations can provide a roadmap when considered for modeling the charges of other, similar customer groups. They can forecast prices by predicting future charges and they provide useful points of reference for insurers in backing up pricing decisions internally and externally. For instance, an underwriter could use analyses like this when approving or writing a policy and refer to the models to justify their reasoning to a client or to their team.
+
+For more accurate predictions on the age vs. charges correlation, other regression models might be used, or perhaps an exponential trend line might fit better than a linear one. Were I to continue my analysis I would explore other kinds of regression like multiple or polynomial or AI algorithms such as random forest or gradient boosting regression.
