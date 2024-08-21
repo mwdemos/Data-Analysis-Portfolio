@@ -8,9 +8,9 @@ Hi, I'm Mike. I'm a mathematics teacher with a growing passion for working with 
 - Crafting visualizations and dashboards to drive and augment communication of insights
 
 ## Tools:
-- Languages: SQL, Excel VBA
+- Languages: SQL, R, Excel VBA
 - Database management: SQLite / SQLiteStudio, Excel
-- Visualization: Tableau, Excel
+- Visualization: Tableau, Excel, RStudio
 
 ## Projects:
 | Project Name | Description | Skills Used |
