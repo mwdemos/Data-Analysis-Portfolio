@@ -4,3 +4,4 @@ Pricing in insurance is determined by several factors and is assisted by data an
 
 # Demographics
 
+![Model](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Predicting%20Insurance%20Charges/Images/demographics.png)
