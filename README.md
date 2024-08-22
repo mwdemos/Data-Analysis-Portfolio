@@ -10,7 +10,7 @@ Hi, I'm Mike. I'm a mathematics teacher with a growing passion for working with 
 ## Tools:
 - Languages: SQL, R, Excel VBA
 - Database management: SQLite / SQLiteStudio, Excel
-- Visualization: Tableau, Excel, RStudio
+- Visualization: Tableau, Excel, RStudio, Minitab
 
 ## Projects:
 | Project Name | Description | Skills Used |
