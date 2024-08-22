@@ -2,7 +2,7 @@
 
 This coursework involved the use of R, Minitab, and Excel (and LaTeX--not part of the prescribed coursework but I wanted to use it for some extra practice).
 
-| Project Name | Skills Used |
+| Project Name | Skills Used / Methods Applied |
 | --- | --- |
 | Analysis of the Differences Between Average Massachusetts Teacher Salaries by District [(Report)](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Statistics%20Coursework/Demos_Project.pdf),  [(Data - click "view raw")](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Statistics%20Coursework/Demos_Project%20Data%20teacher%20salaries.xlsx) | creating an original statistical study, research design, data gathering, random sampling, descriptive statistics, statistical analysis, data visualization, confidence intervals, population inferences from sample observations, difference in means, t-tests, p-values, data manipulation |
 | [(1) Health Evaluation & Linkage to Primary Care, (2) Old Faithful Geyser](https://github.com/mwdemos/Data-Analysis-Portfolio/blob/main/Statistics%20Coursework/Demos_Hw1R.pdf) | descriptive statistics, density plots, histograms, statistical analysis |
